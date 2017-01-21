@@ -1,24 +1,4 @@
 /*
-function addcode(textAreaId, text) {
-  var textArea = document.getElementById(textAreaId);
-  var cursorPosition = textArea.selectionStart;
-  cursorposition(textArea, cursorPosition, text);
-  updatecursorposition(cursorPosition, text, textArea);
-}
-
-function cursorposition(textArea, cursorPosition, text) {
-  var front = (textArea.value).substring(0, cursorPosition);
-  var back = (textArea.value).substring(cursorPosition, textArea.value.length);
-  textArea.value = front + text + back;
-}
-
-function updatecursorposition(cursorPosition, text, textArea) {
-  cursorPosition = cursorPosition + text.length;
-  textArea.selectionStart = cursorPosition;
-  textArea.selectionEnd = cursorPosition;
-  textArea.focus();    
-}
-
 function atalho(key){
   // if(key==1){ addcode('screen',codebtn_base); /* CTRL+Shift+A * / }
   // if(key==2){ addcode('screen',codebtn_base); /* CTRL+Shift+B * / }
@@ -26,20 +6,7 @@ function atalho(key){
   // if(key==4){ addcode('screen',codebtn_base); /* CTRL+Shift+D * / }
   // alert(key);
 }
-
-function savecode() {
-  var codescreen = document.getElementById('screen').value;
-  window.localStorage.setItem('code', codescreen);
-}
-
-function recovercode() {
-  var code = window.localStorage.getItem('code');
-  if (code == '') { var code = '<!-- Welcome -->'; }
-  addcode('screen', code);
-  code.download = "teste.html";
-}
 */
-
 
 function addtext(idElement, text) {
   var area = document.getElementById(idElement);
@@ -72,7 +39,6 @@ function recovertext(idElement, nameElement) {
   addtext(idElement, text);
   text.download = "teste.html";
 }
-
 
 /*
 ---------------------------
