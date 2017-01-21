@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="Resource-type" content="document">
+    <meta name="Robots" content="all">
+    <meta name="Rating" content="general">
+    <title>Edit</title>
+    <meta name="description" content="Editor de Código online">
+    <meta name="author" content="Gabriel Masson">
+    <link href="files/img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="files/css/style.css" rel="stylesheet" type="text/css">
+    <script src="files/js/script.js"></script>
+  </head>
+
+  <body onload="recovertext('screen', 'textarea1');">
+
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="logo">Edit</span> 
+          <span class="btn btn-sm" onclick="addtext('screen',codebtn_base)">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+          </span>
+        </div>
+        <div class="col-md-6 text-right">
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_link)">&lt;link&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_style)">&lt;style&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_script)">&lt;script&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_p)">&lt;p&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_strong)">&lt;strong&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_div)">&lt;div&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_a)">&lt;a&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_hr)">&lt;hr&gt;</button>
+          <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_php)">PHP</button>
+        </div>
+      </div>
+    </header>
+    
+    <section class="container-fluid">
+      <div class="row">
+        
+        <div class="col-md-2">
+          <div class="side">
+            <small>Estrutura</small>
+            <br>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_row)">row</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col1)">col1</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col2)">col2</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col3)">col3</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col4)">col4</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col5)">col5</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col6)">col6</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col7)">col7</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col8)">col8</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col9)">col9</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col10)">col10</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col11)">col11</button>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_col12)">col12</button>
+            <br><br>
+            <small>Elementos</small>
+            <br>
+            <button class="btn btn-sm btn-black" onclick="addtext('screen',codebtn_icon)">Icon</button>
+          </div>
+        </div>
+
+        <div class="col-md-10">
+          <textarea id="screen" onkeyup="savetext('screen', 'textarea1')" onmouseover="savetext('screen', 'textarea1')" onblur="savetext('screen', 'textarea1')" onclick="savetext('screen', 'textarea1')" autofocus></textarea>
+        </div>
+
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+body {
+  background: #222;
+  color: #fff;
+}
+
+.btn { border-radius: 0; margin: 3px; }
+.btn:hover { color: #fff }
+
+.btn-black { background-color: #555; border-color: #555; color: #FFFFFF; }
+.btn-black .badge { color: #555; background-color: #FFFFFF; }
+.btn-black:hover,
+.btn-black:focus,
+.btn-black.focus,
+.btn-black.active { background-color: #555; border-color: #555; color: #FFFFFF; }
+
+
+header { padding: 1% 0; }
+header .logo { font-size: 1.7em; }
+
+.side {
+  width: 100%;
+  max-height: 621px;
+  color: #fff;
+  overflow: auto;
+}
+
+textarea {
+  width: 100%;
+  min-height: 621px;
+  background: #333;
+  color: #fff;
+  border: 1px solid #777;
+  padding: 12px;
+}
